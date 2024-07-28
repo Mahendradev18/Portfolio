@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+       
+        @media screen and (max-width:990px) {
+          
+            .photo,.name{
+                flex-basis: 80%;
+            }
+
+            .mypic{
+                width: 60%;
+                height: 60%;
+            }
+           
+            .a1,.a2{
+              flex-basis: 130%;
+              padding-top: 20px;
+            }
+            .i3{
+              100px;
+            }
+            .s61,.s62{
+              flex-basis: 100%;
+            }
+            li{
+              flex-basis: 100%;
+            }
+            
+            
+              .ee{
+                font-size: 1.2rem;
+              }
+              .fd{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-left: 100px; 
+                padding-top: 0px;     
+                padding-right: 30px;
+                column-gap: 50px;
+              }
+              .s81,.s82{
+                flex-basis: 100%;
+              }
+              .s8{
+                gap: 20px;
+              }
+              
+            }
+        @media screen and (min-width:991px){
+            .navbar{
+                padding-top: 30px;
+                
+            }
+            .navbar-brand{
+                font-size: 30px;
+                position: relative;
+                left: 100px;
+            }
+         .nav-item{
+            position: relative;
+            left: 400px;
+            font-size: 25px;
+            padding-left: 20px;
+         }    
+         .mypic{
+            width: 70%;
+            height: 70%;
+         }   
+         .fd{
+          row-gap: 50px;
+          column-gap: 30px;
+          padding-top: 40px;
+          padding-left: 50px;
+         }        
+        }
+
+
+        .s1{
+            width: 80vw;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-top: 100px;
+            
+        }
+        .photo{
+            height: 100%;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .name{
+            height: 100%;
+            width: 30%;
+            text-align: center;
+            padding-top: 43px;
+            
+            
+        }
+       .mypic{
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+       }
+       .icon1{
+        position: relative;
+        top: 10px;
+        height: 100%;
+        width: 15%;
+       }
+       .icon1:hover{
+        cursor: pointer;
+       }
+       .s2{
+        border: 2px solid;height: 20px;
+       }
+       .s3{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+       }
+      .s4{
+        width: 60vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 100px;
+        gap: 20px;
+
+      }
+      .a1{
+        border: 1px solid;
+        border-radius: 30px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px;
+      }
+      .a2{
+        border: 1px solid;
+        border-radius: 30px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .a3{
+        width: 100%;
+        height: 60%;
+      }
+      .icon3{
+        width: 40px;
+      }
+      .p1{
+        font-size: 15px;
+      }
+    .p2{
+      padding-left: 15px;
+      font-size: 17px;
+      padding-top: 40px;
+    }
+    .s5{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 70px;
+      
+    }
+    .s6{
+      width: 80vw;
+      /* height: 90vh; */
+      /* background-color: aqua; */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+      position: relative;
+      top: 80px;
+    }
+    .s61{
+      width: 45%;
+      /* height: 90%; */
+      border: 1px solid;
+      border-radius: 30px;
+    }
+    .s62{
+      width: 45%;
+      /* height: 90%; */
+      border: 1px solid;
+      border-radius: 30px;
+    }
+    li{
+      font-size: 1.4rem;
+      width: 40%;
+      padding-top: 20px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
+    .fd{
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+    .s7{
+      padding-top: 200px;
+    }
+    .s8{
+      width: 80vw;
+      /* background-color: yellow; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: relative;
+      top: 100px;      
+    }
+    .s81{
+      width: 45%;
+      border: 2px solid;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-radius: 50px;
+      
+    }
+    .s82{
+      width: 45%;
+      border: 2px solid;
+    }
+    .pr1{
+      width: 90%;
+      height: 60%;
+      padding-top: 20px;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .s9{
+      position: relative;
+      top: 50px;
+      display: flex;
+      border: 2px solid;
+      /* height: 10vh; */
+      width: 80vw;
+      border-radius: 30px;
+      align-items: center;
+      justify-content: center;
+      padding-left: 30px;
+      gap: 10px;
+    }
+    .ba{
+      position: relative;
+      top: 5px;
+      font-size: 2vw;
+    }
+    .mail{
+      width: 7%;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" style="position: relative">
+          <a href="" class="navbar-brand" >MS.MAHENDRA</a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navi"
+            id="md"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navi">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Blogs</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+
+      <div class="s1 d-flex">
+        <div class="photo">
+            <img class="mypic" src="./1708678070961.jpg" width="90%" height="50%"/>
+        </div>
+        <div class="name">
+            <p class="fw-normal">Hello,I'm</p>
+            <h1 class="fw-bolder" >MS.MAHENDRA</h1>
+            <h3 class="fw-medium">Full Stack Developer</h3><br>
+            <button type="button" class="b1 " style="background-color: transparent;border-radius: 30px; padding: 10px 14px; width: 130px;">See Resume</button>
+            <button type="button" class="b2" style="background-color: rgb(150, 136, 136);border-radius: 30px; padding: 10px 14px; width: 130px">Contact Info</button><br>
+            <svg class="icon1" fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z "></path> </g></svg>
+            <svg  class="icon1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github</title> <rect width="24" height="24" fill="none"></rect> <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"></path> </g></svg>
+        </div>
+        </div>
+
+        <div class="s3 d-flex">
+        <p class="fw-medium" style="font-size: 3vh; position: relative; top: 30px;">Get to know more</p>
+        <h1 style="font-size: 8vh;">About Me</h1>
+        
+      </div>
+
+      <div class="s4">
+        <div class="a1">
+          <h3 class="ee">Educational Experience</h3>
+          <p class="fw-normal p1">Fresher</p>
+          <p class="fw-normal p1">6 months internship experience</p>
+          <p class="fw-normal p1">Full Stack Developement</p>
+        </div>
+        <div class="a2">
+
+          <h3>Education</h3>
+          <p class="p1">Gayatri College of Science & Management</p>
+          <P class="p1">BSc Computers</P>
+          <P class="p1">(Completed)</P>
+        </div>
+        <div class="a3">
+          <p class="p2">I'm <b>Frontend Developer</b> from Anantapur, India, I build apps with a focus on <b>JavaScript React & Redux</b> considering all the aspects of <b>UI/UX</b> . I enjoy turning complex problems into simple, beautiful and intuitive designs.
+            A <b>Software Engineer</b> , who loves to solve problems. I am having an some practical experience of building high-performing, responsive, beautiful web applications to deliver a unique, intuitive user experience that works, also <b>keen interest in UI/UX</b> with some nice designing skills.
+            I am a well-trained teammate who loves to share ideas and prioritizes communication in order to achieve goals within the set deadlines. I enjoy being challenged and working on projects that require me to step outside of my comfort zone.</p>
+        </div>
+      </div>
+
+      <div class="s5">
+      <p class="fw-medium" style="font-size: 3vh; position: relative; top: 15px;">Explore</p>
+      <h1 style="font-size: 8vh;">My Skills</h1>
+      </div>
+      
+        <div class="s6">
+          <div class="s61">
+            <h2 style="text-align: center; padding-top: 20px;">Frontend Development</h2>
+              <ul class="fd" >
+                <li>HTML</li>
+                <li> CSS3</li>
+                <li>JAVASCRIPT</li>
+                <li>REDUX</li>
+                <li>REACT JS</li>
+                <li>BOOTSRAP</li>
+              </ul>
+            </div>
+          <div class="s62">
+            <h2 style="text-align: center; padding-top: 20px;">Backend Development & Tools</h2>
+            <ul class="fd" >
+              <li>NODE JS</li>
+              <li>MY SQL</li>
+              <li>JAVA</li>
+              <li>GIT</li>
+              <li>VS CODE</li>
+              <li>GUTHUB</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="s5 s7">
+          <p class="fw-medium" style="font-size: 3vh; position: relative; top: 30px;">Browse My Recent</p>
+          <h1 style="font-size: 9vh;">Projects</h1>
+          </div>
+
+          <div class="s8">
+            <div class="s81">
+              <img class="pr1" src="./Screenshot 2024-07-28 104923.png">
+              <h2 style="width: 100%; text-align: center;"> E-Commerce Website</h2>
+              <button style="background-color: transparent; border-radius: 20px; width: 100px; height: 40px; position: relative; left: -5px;">GitHub</button>
+              <button style="background-color: transparent; border-radius: 20px; width: 100px; height: 40px; position: relative; left: 5px;">Live Demo</button>
+              
+            </div>
+            <div class="s81">
+              <img class="pr1" src="./Screenshot 2024-07-28 104923.png">
+              <h2 style="width: 100%; text-align: center;"> E-Commerce Website</h2>
+              <button style="background-color: transparent; border-radius: 20px; width: 100px; height: 40px; position: relative; left: -5px;">GitHub</button>
+              <button style="background-color: transparent; border-radius: 20px; width: 100px; height: 40px; position: relative; left: 5px;">Live Demo</button>
+            </div>
+          </div>
+       
+          <div class="s5 s7">
+            <p class="fw-medium" style="font-size: 3vh; position: relative; top: 20px;">Get in touch</p>
+            <h1 style="font-size: 7vh;">Contact Me</h1>
+            </div>
+
+          <div class="s9">
+            <svg class="mail" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path stroke="#000000" stroke-linejoin="round" stroke-width="12" d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"></path></g></svg>
+            <p class="ba">msmahendra1436@gmail.com</p>
+            <svg class="mail" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="132" height="132" x="30" y="30" stroke="#000000" stroke-width="12" rx="16"></rect><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M66 86v44"></path><circle cx="66" cy="64" r="8" fill="#000000"></circle><path stroke="#000000" stroke-linecap="round" stroke-width="12" d="M126 130v-26c0-9.941-8.059-18-18-18v0c-9.941 0-18 8.059-18 18v26"></path></g></svg>
+            <p class="ba">Mohan Sai Mahendra</p>
+          </div>
+
+
+    </div>
+
+
+   
+</body>
+</html>
